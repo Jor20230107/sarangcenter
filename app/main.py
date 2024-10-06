@@ -23,9 +23,9 @@ init_db()
 @app.get("/")
 def read_main_page(request: Request, db: Session = Depends(get_db)):
     # 데이터베이스에서 센터 소개 페이지 내용 가져오기
-    # page_content = db.query(PageContent).filter(PageContent.page_name == "index").first()
+    page_content = db.query(PageContent).filter(PageContent.page_name == "index").first()
     return templates.TemplateResponse("index.html", {"request": request
-                                                    #  , "content": page_content.content if page_content else "소개 내용이 없습니다."
+                                                     , "content": page_content.content if page_content else "소개 내용이 없습니다."
                                                      })
 
 # 기타 페이지 라우팅

@@ -1,23 +1,48 @@
 <!DOCTYPE html>
+<html lang="ko">
 <head>
-    <meta name="description" content="우리 센터 소개 및 활동 정보">
-    <meta name="keywords" content="복지센터, 봉사활동, 지역사회">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="우리 센터 활동 갤러리">
+    <meta name="keywords" content="복지센터, 활동 갤러리, 봉사활동">
     <meta name="author" content="우리 센터">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>활동 갤러리</title>
 </head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">사랑 복지센터 소개</a></li>
+                <li><a href="/activities">사랑 복지센터만의 활동</a></li>
+                <li><a href="/directions">오시는 길</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <h1>우리 센터 활동 갤러리</h1>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/static/images/activity1.jpg" alt="활동 이미지 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/static/images/activity2.jpg" alt="활동 이미지 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/static/images/activity3.jpg" alt="활동 이미지 3">
+            </div>
+            <div class="gallery-item">
+                <img src="/static/images/activity4.jpg" alt="활동 이미지 4">
+            </div>
+            <div class="gallery-item">
+                <img src="/static/images/activity5.jpg" alt="활동 이미지 5">
+            </div>
+        </div>
+    </main>
 
-<div class="gallery">
-    <img src="/static/images/image1.jpg" alt="활동 사진">
-    <img src="/static/images/image2.jpg" alt="활동 사진">
-    <img src="/static/images/image3.jpg" alt="활동 사진">
-</div>
-
-<script>
-    const images = document.querySelectorAll('.gallery img');
-    images.forEach(img => {
-        img.addEventListener('click', () => {
-            window.open(img.src, '_blank');
-        });
-    });
-</script>
+    <footer>
+        <p>&copy; 2024 우리 센터</p>
+    </footer>
+</body>
 </html>

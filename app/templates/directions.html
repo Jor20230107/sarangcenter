@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="우리 센터 소개 및 활동 정보">
+    <meta name="keywords" content="복지센터, 봉사활동, 지역사회">
+    <meta name="author" content="우리 센터">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>오시는 길</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">사랑 복지센터 소개</a></li>
+                <li><a href="/activities">사랑 복지센터만의 활동</a></li>
+                <li><a href="/directions">오시는 길</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>오시는 길</h1>
+        <!-- content 변수를 사용하여 데이터베이스에서 가져온 내용을 출력 -->
+        <p>{{ content }}</p>  <!-- 여기에 동적 콘텐츠를 표시 -->
+        <img src="/static/images/center_image.jpg" alt="센터 이미지">
+    </main>
+    <footer>
+        <p>&copy; 2024 사랑 복지센터</p>
+    </footer>
+</body>
+</html>
